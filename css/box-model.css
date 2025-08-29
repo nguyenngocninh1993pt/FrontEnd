@@ -1,0 +1,41 @@
+div{
+  /* width: 300px;   */
+  /* width: 20%;  */ /* chiếm 20% chiều rộng của thẻ cha */    
+  width: calc(25% - 20px); /* tính toán chiều rộng: 25% thẻ cha - 2px của border -20px của margin (left right)*/
+  float: left; /* cho phép các thẻ div đứng cạnh nhau: right */
+  border: 1px solid #86b19d;
+  /* border-bottom, border-top, border-left, border-right */
+  margin: 10px; /* khoảng cách giữa các thẻ div */
+  padding: 15px; /* khoảng cách giữa viền và nội dung */
+  /* margin và padding có thể đặt riêng lẻ cho từng phía */
+  /* margin: top right bottom left; */
+  /* padding: top right bottom left; */
+  /* margin-top:... margin-right... */
+  /* padding-top... padding-right... */
+
+    box-sizing: border-box; /* bao gồm cả border và padding vào trong chiều rộng và chiều cao của thẻ */
+
+    border-radius: 5px; /* bo tròn các góc của thẻ */
+    background-color: #abdfc7; /* màu nền */
+
+    
+}
+div:hover{ /* hiệu ứng khi hover chuột vào thẻ - giúp người dùng dễ nhận diện phần tử khi sử dụng */
+    background-color: #86b19d; /* màu nền khi hover chuột vào thẻ */
+     /* transform: translate(0, -5px); /* di chuyển thẻ lên trên 5px */
+    /*  transform: scale(1.05); /* phóng to thẻ lên 5% */
+    transform: rotate(45deg); /* xoay thẻ 45 độ */
+    transition: all 0.3s ease; /* hiệu ứng chuyển đổi mượt mà trong 0.3s */
+}
+img{
+    max-width: 100%; /* co hinhf anhr về kích thước của thẻ cha nếu nó vượt quá */
+}
+.special{
+    background-color: #ddc5d2;
+}
+.ti{
+
+}
+.bg-blue{
+    background-color: #66a9f1;
+}

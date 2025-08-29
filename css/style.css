@@ -16,4 +16,8 @@ p{
     width: 600px; /* độ rộng của đoạn văn */
     background-color: #fdfdfd; /* màu nền */
     border-bottom: 1px solid #000; /* viền dưới */
+    padding-bottom: 10px; /* khoảng cách từ chữ đến viền dưới */
+}
+h2{
+    border-bottom: 1px solid yellow;
 }
