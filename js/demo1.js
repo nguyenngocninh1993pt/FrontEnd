@@ -75,10 +75,23 @@ var lk = Math.random(); // taoj 1 số thực ngẫu nhiên từ 0->1
 lk  = lk * 100;
 lk = parseInt(lk);
 
-var num = prompt("Bạn chọn số nào?");
-num = parseInt(num);
-if(num == lk){
-    alert("Chúc mừng, bạn đã trúng thưởng 1 tỷ!");
-}else{
-    alert("Chúc bạn may mắn vào ngày mai!");
-}
+// var num = prompt("Bạn chọn số nào?");
+// num = parseInt(num);
+// if(num == lk){
+//     alert("Chúc mừng, bạn đã trúng thưởng 1 tỷ!");
+// }else{
+//     alert("Chúc bạn may mắn vào ngày mai!");
+// }
+
+// setTimeout(function(){
+//     alert("ABCXYZ");
+//     alert("123");
+// }, 3000);// 3000 ms
+var c = 10;
+var bom = setInterval(function(){
+    alert(c);
+    c--;
+    if(c<=0){
+        clearInterval(bom);
+    }
+},1000);// 3000 ms
